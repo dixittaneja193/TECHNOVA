@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECHNOVA V.1.0 - Event Brochure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --band1: #199d8e;
+      --band2: #3a3a3a;
+      --band3: #003b31;
+      --band4: #2f2f2f;
+      --band5: #ef4444;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      scroll-behavior: smooth;
+      animation: fadeIn 1s ease-in;
+    }
+    h1, h2, h3 {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 600;
+    }
+    .band-card {
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    }
+    .band-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    }
+    .band1 { background: var(--band1); color: white; }
+    .band2 { background: var(--band2); color: white; }
+    .band3 { background: var(--band3); color: white; }
+    .band4 { background: var(--band4); color: white; }
+    .band5 { background: var(--band5); color: white; }
+    .event-highlight {
+      transition: all 0.3s ease;
+    }
+    .event-highlight:hover {
+      transform: scale(1.02);
+    }
+    .glow {
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="text-center mb-16 fade-in animate-fade-in">
+      <img src="fb6f0079-14a8-4416-b542-e30748524fa7.png" alt="TechNova V.1 Logo" class="mx-auto w-32 mb-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-yellow-400 to-cyan-400 animate-pulse">
+        TECHNOVA V.1.O
+      </h1>
+      <p class="font-bold text-xl text-slate-300 max-w-3xl mx-auto">
+        <marquee> Rise. Create. Conquer. – The Future Begins at TECHNOVA! </marquee>
+      </p>
+    </header>
+
+    <!-- Event Bands Section -->
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" aria-label="Event Bands">
+      <!-- Band I -->
+      <div class="band-card band1 rounded-xl p-6 fade-in">
+        <h2 class="text-2xl font-bold mb-2">Band I</h2>
+        <p class="mb-4 font-bold">(Grade I & II)</p>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow mb-2">
+          <h3 class="font-bold text-lg">FUTURE FASHION FEST</h3>
+          <p>Dress up in futuristic outfits to showcase imagination</p>
+        </div>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow">
+          <h3 class="font-bold text-lg">DIGITAL CANVAS</h3>
+          <p>Create digital artwork on given themes</p>
+        </div>
+      </div>
+
+      <!-- Band II -->
+      <div class="band-card band2 rounded-xl p-6 fade-in">
+        <h2 class="text-2xl font-bold mb-2">Band II</h2>
+        <p class="mb-4 font-bold">(Grade III - V)</p>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow mb-2">
+          <h3 class="font-bold text-lg">SLIDE SQUARD</h3>
+          <p>PPT making competition with given topics</p>
+        </div>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow">
+          <h3 class="font-bold text-lg">POSTER POP</h3>
+          <p>Create a poster using MS Word</p>
+        </div>
+      </div>
+
+      <!-- Band III -->
+      <div class="band-card band3 rounded-xl p-6 fade-in">
+        <h2 class="text-2xl font-bold mb-2">Band III</h2>
+        <p class="mb-4 font-bold">(Grade VI & VII)</p>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow mb-2">
+          <h3 class="font-bold text-lg">SHEETMASTER-X</h3>
+          <p>Make a robot by using MS Excel</p>
+        </div>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow">
+          <h3 class="font-bold text-lg">CODE & SHOW</h3>
+          <p>Drag & drop blocks to make futuristic animation on Scratch</p>
+        </div>
+      </div>
+
+      <!-- Band IV -->
+      <div class="band-card band4 rounded-xl p-6 fade-in">
+        <h2 class="text-2xl font-bold mb-2">Band IV</h2>
+        <p class="mb-4 font-bold">(Grade VIII & IX)</p>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow mb-2">
+          <h3 class="font-bold text-lg">CODE FORM SHOWDOWN</h3>
+          <p>Make a website/webpage by using HTML</p>
+        </div>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow">
+          <h3 class="font-bold text-lg">TECHQUIZ</h3>
+          <p>There will be an A.I. related quiz</p>
+        </div>
+      </div>
+
+      <!-- Band V -->
+      <div class="band-card band5 rounded-xl p-6 fade-in col-span-1 md:col-span-2 lg:col-span-1">
+        <h2 class="text-2xl font-bold mb-2">Band V</h2>
+        <p class="mb-4 font-bold">(Grade X & XI)</p>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow mb-2">
+          <h3 class="font-bold text-lg">NOVA CLASH</h3>
+          <p>BGMI inter-class tournament with your teammates</p>
+        </div>
+        <div class="event-highlight bg-white bg-opacity-30 p-4 rounded-lg glow">
+          <h3 class="font-bold text-lg">CINEMATIC CRAZE</h3>
+          <p>Short video creation on tech impact or school life – creativity meets storytelling</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Register Button -->
+    <div class="flex justify-center">
+      <a href="https://drive.google.com/file/d/1sjc9UHKem-rbSDuAfZ6tUg5__3JkMdHs/view?usp=sharing" target="_blank" class="bg-gradient-to-r from-cyan-500 to-fuchsia-500 hover:from-cyan-600 hover:to-fuchsia-600 text-white font-extrabold px-10 py-5 rounded-full shadow-xl transform hover:scale-110 transition duration-500 animate-bounce">
+        🚀 Register Now
+      </a>
+    </div>
+
+    <!-- YouTube Promo -->
+    <section class="mt-20 fade-in">
+      <h2 class="text-3xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500 mb-6">
+        🔥 Watch the Hype!
+      </h2>
+      <p class="text-center text-slate-400 mb-8 max-w-xl mx-auto">
+        Dive into the world of innovation! Here's a glimpse of what's brewing at TECHNOVA V.1.0
+      </p>
+      <div class="flex justify-center mb-10">
+        <iframe class="rounded-xl shadow-2xl w-full max-w-3xl h-64 md:h-96" 
+                src="https://www.youtube.com/embed/B6hOrz2Amag" 
+                title="TechNova Promo Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+        </iframe>
+      </div>
+      <div class="flex justify-center">
+        <a href="https://www.instagram.com/reel/DM5C0ReKIeE/?utm_source=ig_web_copy_link&igsh=MTBhbmN1ZGlmb2V4Mg==" target="_blank" class="bg-gradient-to-r from-pink-500 to-yellow-400 hover:from-pink-600 hover:to-yellow-500 text-white font-bold px-6 py-3 rounded-full shadow-md transition-all">
+          🎬 Watch Our Insta Reel
+        </a>
+      </div>
+    </section>
+
+    <!-- Credits -->
+    <section class="mt-16">
+      <marquee behavior="scroll" direction="left" class="font-bold text-white bg-slate-700 py-3 rounded-md">
+        ✨ Designed & developed by IT Club Members • Led by Dixit Taneja ✨
+      </marquee>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-16 py-8 bg-slate-800 text-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-xl font-bold mb-2">TECHNOVA V.1.O</h3>
+            <p>Rise. Create. Conquer – The Future Begins at TECHNOVA!</p>
+          </div>
+          <div class="flex space-x-6">
+            <a href="https://www.instagram.com/hessharadvihar/?hl=en" target="_blank" class="hover:text-indigo-300 transition-colors">Instagram</a>
+            <a href="https://www.facebook.com/hessharadvihar/" target="_blank" class="hover:text-indigo-300 transition-colors">Facebook</a>
+            <a href="https://www.youtube.com/@hessharadvihar1991" target="_blank" class="hover:text-indigo-300 transition-colors">YouTube</a>
+          </div>
+        </div>
+        <div class="border-t border-slate-700 mt-8 pt-6 text-center text-slate-400">
+          <p>© 2025 Happy English School, Sharad Vihar . All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
